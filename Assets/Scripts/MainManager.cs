@@ -71,6 +71,7 @@ public class MainManager : MonoBehaviour
     public void GameOver()
     {
         m_GameOver = true;
+        NameScoreManager.Instance.SaveScore(m_Points);
         GameOverText.SetActive(true);
     }
 }

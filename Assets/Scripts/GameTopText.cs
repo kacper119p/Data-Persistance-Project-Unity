@@ -10,6 +10,6 @@ public class GameTopText : MonoBehaviour
     void Update()
     {
        Text text = gameObject.GetComponent<Text>();
-       text.text = "Best Score: " + "Name: " + NameScoreManager.Instance.name;
+       text.text = "Best Score: " + NameScoreManager.Instance.highscore + " Name: " + NameScoreManager.Instance.name;
     }
 }
